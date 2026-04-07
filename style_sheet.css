@@ -20,9 +20,9 @@ header{
 
 }
 /*structuring border*/
-/* header,div,main,footer,nav{
+header,div,main,footer,nav{
     border: solid 1px blue;
-} */
+}
 nav{
     position: sticky;
     top: 2px;
