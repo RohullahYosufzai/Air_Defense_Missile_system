@@ -20,9 +20,9 @@ header{
 
 }
 /*structuring border*/
-header,div,main,footer,nav{
+/* header,div,main,footer,nav{
     border: solid 1px blue;
-}
+} */
 nav{
     position: sticky;
     top: 2px;
@@ -106,14 +106,26 @@ footer{
 }
 #feature_section{
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4,25vw);
     padding: 10px;
     align-items: center;
     color: white;
 }
+#feature_section div{
+    width: 22vw;
+    height: 20vh;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 20%;
+}
 #feature1{
     grid-column: 1/2;
-}#feature2{
+
+}
+#feature1:hover{
+    background-color: var(--nav-bg-color);
+}
+#feature2{
     grid-column: 2/3;
 }#feature3{
     grid-column: 3/4;
