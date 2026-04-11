@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Air Defense System</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #0A0F1C;
+  --primary: #00C2FF;
+  --secondary: #1E2A38;
+  --danger: #FF3B3B;
+  --success: #00FF9C;
+  --text: #E6EAF0;
+}{margin:0; padding:0; box-sizing:border-box;} body { font-family: 'Roboto Mono', monospace; background: var(--bg); color: var(--text); }
+
+
+nav { display:flex; justify-content:space-between; padding:15px 30px; background: var(--secondary); }
+ nav h1 {color: var(--primary);} 
+ nav ul { display:flex; gap:20px; list-style:none; } 
+ nav a { color: var(--text); text-decoration:none; }
+
+.hero { display:flex; flex-wrap:wrap; align-items:center; padding:60px 20px; } 
+.hero-text {flex:1;} 
+.hero-text h2 { font-family:'Orbitron'; font-size:2.5rem; } 
+.hero-text p {margin:20px 0;}
+ .hero-text button { padding:10px 20px; margin-right:10px; border:none; background: var(--primary); color:#000; cursor:pointer; }
+.hero-img {flex:1; text-align:center;} 
+.hero-img img {max-width:100%;}
+
+.section { padding:50px 20px; } .section h2 { text-align:center; margin-bottom:30px; }
+
+.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap:20px; } .card { background: var(--secondary); padding:20px; border-radius:10px; text-align:center; transition:0.3s; } .card:hover { transform:translateY(-5px); box-shadow:0 0 10px var(--primary); }
+
+.radar { width:250px; height:250px; border:2px solid var(--primary); border-radius:50%; margin: auto; position:relative; overflow:hidden; } .sweep { width:100%; height:100%; border-radius:50%; position:absolute; background: conic-gradient(rgba(0,194,255,0.4), transparent); animation: rotate 3s linear infinite; } @keyframes rotate { 100% {transform: rotate(360deg);} }
+
+.process { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; } .step { background: var(--secondary); padding:10px 15px; border-radius:5px; }
+
+.control { display:flex; flex-wrap:wrap; gap:20px; } .control div { flex:1; background: var(--secondary); padding:20px; } button.action { display:block; width:100%; margin:10px 0; padding:10px; border:none; cursor:pointer; } .activate {background: var(--success);} .launch {background: var(--danger);}
+
+footer { text-align:center; padding:20px; background: var(--secondary); }
+
+@media(max-width:768px){ .hero {flex-direction:column;} } </style>
+
+</head>
+<body><nav>
+  <h1>IADS</h1>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Capabilities</a></li>
+    <li><a href="#">Radar</a></li>
+    <li><a href="#">Missiles</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav><section class="hero">
+  <div class="hero-text">
+    <h2>Integrated Air Defense System</h2>
+    <p>Advanced multi-layer missile defense technology</p>
+    <button>View Capabilities</button>
+    <button>Launch Simulation</button>
+  </div>
+  <div class="hero-img">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Missile_launch.jpg" alt="missile">
+  </div>
+</section><section class="section">
+  <h2>Capabilities</h2>
+  <div class="grid">
+    <div class="card">Target Detection</div>
+    <div class="card">Radar Tracking</div>
+    <div class="card">Missile Launch</div>
+    <div class="card">AI Threat Analysis</div>
+    <div class="card">Multi-layer Defense</div>
+    <div class="card">Real-time Response</div>
+  </div>
+</section><section class="section">
+  <h2>Radar System</h2>
+  <div class="radar">
+    <div class="sweep"></div>
+  </div>
+</section><section class="section">
+  <h2>Missile Types</h2>
+  <div class="grid">
+    <div class="card">SAM - Range 120km</div>
+    <div class="card">Short Range - 30km</div>
+    <div class="card">Interceptor - Mach 3</div>
+  </div>
+</section><section class="section">
+  <h2>Detection Process</h2>
+  <div class="process">
+    <div class="step">Detection</div>
+    <div class="step">Tracking</div>
+    <div class="step">Lock</div>
+    <div class="step">Launch</div>
+    <div class="step">Intercept</div>
+  </div>
+</section><section class="section">
+  <h2>Control Panel</h2>
+  <div class="control">
+    <div>
+      <button class="action activate">Activate Radar</button>
+      <button class="action launch">Launch Missile</button>
+    </div>
+    <div>Radar Display</div>
+    <div>Logs & Data</div>
+  </div>
+</section><section class="section">
+  <h2>Secure Access</h2>
+  <input type="text" placeholder="Username"><br><br>
+  <input type="password" placeholder="Password"><br><br>
+  <button>Login</button>
+</section><footer>
+  <p>System Version 1.0 | Secure Defense Interface</p>
+</footer></body>
+</html>
