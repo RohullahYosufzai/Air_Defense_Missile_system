@@ -60,6 +60,10 @@ nav li a:hover{
     font-weight: 600;
     border-bottom: solid 3px white;
 }
+.nav_items.active{
+    background-color: var(--main-bg-color);
+    border-bottom: solid 2px white;
+}
 main{
     display: block;
     text-align: center;
@@ -248,4 +252,20 @@ footer .footer_navs:hover{
     align-items: center;
     justify-content: right;
     margin-right: 6%;
+}
+
+/*about us page*/
+#aboutus_main,#overview_main{
+    text-align: right;
+    color: var(--text-color);
+    line-height: 2;
+}
+#aboutus_main img{
+    position: relative;
+    top: 20px;
+    width: 98vw;
+    height: 150vh;
+    background-size: cover;
+    border-radius: 16px;
+    opacity: 0.8;
 }
