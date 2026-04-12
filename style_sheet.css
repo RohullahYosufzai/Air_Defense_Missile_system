@@ -35,14 +35,14 @@ nav{
     border-radius: 3px;
     width: 98vw;
 }
-ul{
+nav ul, footer ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: block;
     width: 100%;
 }
-li{
+nav li{
     float: right;
 }
 li a{
@@ -52,7 +52,7 @@ li a{
     text-decoration: none;
     color: var(--text-color);
 }
-li a:hover{
+nav li a:hover{
     background-color: rgb(60, 69, 77);
     color: white;
     font-weight: 600;
@@ -113,17 +113,17 @@ main{
     padding-bottom: 5vw;
     padding-left: 5vw;
     padding-right: 5vw;
-    border: solid 1px gray;
-    border-radius: 8px;
+    border: solid 1px rgb(253, 252, 252);
+    border-radius: 16px;
 
-    box-shadow: 2px 2px 16px 1px rgb(164, 162, 162);
+    box-shadow: 1px 1px 6px 1px rgb(122, 122, 124);
     transition: background-color 0.7s,box-shadow 0.5s;
     /* box-shadow: ; */
 }
 
 #feature_section div:hover{
     background-color: var(--nav-bg-color);
-    box-shadow: 3px 3px 10px 1px gray;
+    box-shadow: 3px 3px 10px 1px rgb(40, 40, 42);
     
 }
 #feature1{
@@ -145,7 +145,7 @@ main{
 hr{
     border: none;
     height: 0.5px;
-    background: #d381347a;
+    background: #e6e4e37a;
     margin: 40px 40px 0 0;
 }
 
@@ -169,16 +169,23 @@ footer{
     grid-column: 1/4;
 }
 /*Structuring borders*/
-/* footer, footer img, footer p{
+/* footer, footer img, footer p, footer div{
     border: solid 2px blue;
 } */
 footer .contact_items{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     padding: 2px;
-    margin: 1px;
+    margin-top: 1px;
+    margin-bottom: 8px;
+    background-color: rgb(65, 67, 75);
+    border-radius: 8px;
 }
+footer .contact_info, .contact_info{
+    margin: 10px;
+}
+
 footer .social_media{
     background-color: white;
     height: 40px;
@@ -187,10 +194,49 @@ footer .social_media{
     padding: 6px;
     margin-top: 10px;
 }
-footer img{
+footer .footer_navs{
+    display: flex;
+    justify-content: right;
+    margin-right: 2vw;
+    transition: font-size 0.5s;
+}
+footer .footer_navs:hover{
+    font-size: 18pt;
+}
+footer .social_media_links{
+    margin-top: 10px;
+}
+footer img,.contactpage_info img{
     border: none;
     height: 20px;
     width: 20px;
     margin: 3px;
     margin-top: 6px;
 }
+/*Contact page css*/
+.contact_page_main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-template-rows: repeat(auto-fit,minmax(250px, 1fr));
+    margin-top: 20px;   
+    column-gap: 10px;
+    color: var(--text-color);
+}
+.contactpage_info{
+    border-radius: 8px;
+    text-decoration: none;
+    border: solid blue 3px;
+}
+.contact_page_main .contact_box_items{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    color: var(--text-color);
+    text-decoration: none;
+    margin: 20px;
+}
+/* .contact_page_main #right_contact_box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
